@@ -4,7 +4,7 @@
     <title>Contador</title>
     <style>
 *{
-    margin: 0;
+    margin: 20px;
     box-sizing: border-box;
 }
 body
@@ -15,9 +15,17 @@ body
     display:grid;
     place-items:center;
     }
-section
-{
+sectio{
 background: rgba(255,255,255,0.2);
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+
+
+}
+p{
+    font-size: 100px;
+
 }
 
     </style>
@@ -26,11 +34,22 @@ background: rgba(255,255,255,0.2);
 <body> 
     
    <section> 
-    <h1>Contador1</h1>
+    <h1>CONTADOR 1</h1>
     <p>0</p>
-    <button>menos</button>
-    <button>mais</button>
+    <button onclick="menos">menos</button>
+    <button onclick="mais">mais</button>
 </section>
+<Script>
+    // estado da mmiha aplicação 
+    let numero = 0
+    
+    function menos () {
+        console olg ("menos")
+    }
+    function mais () {
+        console olg ("mais")
+    }
+</Script>
 </body>
 
 </html>
