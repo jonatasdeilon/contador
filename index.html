@@ -7,15 +7,14 @@
     margin: 20px;
     box-sizing: border-box;
 }
-body
-{
+body {
     min-height: 100vh;
     background: black;
     color:white;
     display:grid;
     place-items:center;
     }
-sectio{
+section {
 background: rgba(255,255,255,0.2);
 padding: 20px;
 border-radius: 5px;
@@ -23,11 +22,14 @@ text-align: center;
 
 
 }
-p{
+
+p {
     font-size: 100px;
-
 }
-
+ button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -40,12 +42,13 @@ p{
     <button onclick="aumentar()">mais</button>
 </section>
 <Script>
+    let contador = 0;
     
     function aumentar () {
-        console.olg ("aumentar")
+        console.log ("aumentar")
     }
     function diminuir () {
-        console.olg ("diminuir")
+        console.log ("diminuir")
     }
 </Script>
 </body>
