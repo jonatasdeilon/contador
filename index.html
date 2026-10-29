@@ -44,11 +44,17 @@ p {
 <Script>
     let contador = 0;
     
-    function aumentar () {
-        console.log ("aumentar")
+    function aumentar() {
+        contador = contador + 1
+        mostrar()
     }
-    function diminuir () {
-        console.log ("diminuir")
+    function diminuir() {
+        contador = contador - 1
+        mostrar()
+    }
+    function mostrar(){
+        const p = document.querySelector("p")
+        p.innerText = contador
     }
 </Script>
 </body>
